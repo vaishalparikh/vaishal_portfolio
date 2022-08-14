@@ -25,7 +25,7 @@ export default function ContactUs() {
     const { firstName, lastName, email, phoneNumber, address, message } = user; // object Destructuring
 
     axios
-      .post("/contact", {
+      .post("/api/contact", {
         firstName,
         lastName,
         email,
