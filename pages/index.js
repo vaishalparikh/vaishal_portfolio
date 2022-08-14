@@ -10,6 +10,7 @@ import Feedbacks from "../containers/Feedbacks";
 import GithubProfileCard from "../components/GithubProfileCard";
 import { openSource } from "../portfolio";
 import SEO from "../components/SEO";
+import Copy from "../components/Copy";
 
 export default function Home({ githubProfileData }) {
   return (
@@ -42,6 +43,7 @@ export default function Home({ githubProfileData }) {
       {/* <Feedbacks /> */}
       <Projects />
       <GithubProfileCard prof={githubProfileData} />
+      <Copy />
     </div>
   );
 }

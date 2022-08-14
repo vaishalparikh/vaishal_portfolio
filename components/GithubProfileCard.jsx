@@ -6,7 +6,7 @@ import { Card, Container } from "reactstrap";
 
 const GithubProfileCard = ({ prof }) => {
   return (
-    <Card className="section-lg bg-gradient-info shadow-lg border-0">
+    <Card className="section bg-gradient-info shadow border-0">
       <Container
         className="d-flex justify-content-center
 "
@@ -18,12 +18,7 @@ const GithubProfileCard = ({ prof }) => {
         </div>
       </Container>
       <ContactUs />
-      <div className="text-center p-3">
-        © 2022 Copyright:
-        <a className="text-white" href="https://vaishalparikh.tech/">
-          Vaishal Parikh
-        </a>
-      </div>
+
 
       <ScrollToTop
         smooth
