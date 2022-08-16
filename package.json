@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.",
   "main": "index.js",
-  "proxy" : "http://localhost:3001",
+  "proxy": "http://localhost:3001",
   "repository": {
     "type": "git",
     "url": "https://github.com/vaishalparikh"
@@ -15,7 +15,6 @@
     "build": "next build && next export",
     "start": "next start -p $PORT"
   },
-
   "dependencies": {
     "@apollo/client": "^3.3.21",
     "@iconify/react": "^3.1.3",
@@ -40,12 +39,12 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "^4.0.3",
     "react-scroll-to-top": "^3.0.0",
+    "react-toastify": "^9.0.8",
     "react-typist": "^2.0.5",
     "reactstrap": "^8.9.0",
     "sharp": "^0.29.1",
     "swr": "^1.3.0"
   },
- 
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2"

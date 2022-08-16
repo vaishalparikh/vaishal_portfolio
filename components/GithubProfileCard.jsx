@@ -11,7 +11,7 @@ const GithubProfileCard = ({ prof }) => {
         className="d-flex justify-content-center
 "
       >
-        <div className="p-2">
+        <div className="p-1">
           <h2 className="text-white text-center">Reach Out to me!</h2>
 
           <p className="text-white mt-3">{prof.bio}</p>

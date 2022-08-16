@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactUs() {
   const [user, setUser] = useState({
@@ -22,7 +24,7 @@ export default function ContactUs() {
 
   const PostData = async (e) => {
     e.preventDefault();
-    const { firstName, lastName, email, phoneNumber, address, message } = user; // object Destructuring
+    const { firstName, lastName, email, phoneNumber, address, message } = user;  // object Destructuring
 
     axios
       .post("/api/contact", {
@@ -35,11 +37,27 @@ export default function ContactUs() {
       })
       .then((res) => {
         console.log(res.data);
-        alert("Success");
+        toast.success('Thank you for contacting us! ', {
+          position: "bottom-right",
+          autoClose: 3000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
       })
       .catch((e) => {
         console.log(e);
-        alert("Failed");
+        toast.error('Oops, something went wrong.Please check and try again. ', {
+          position: "bottom-right",
+          autoClose: 3000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
       });
   };
 
@@ -137,6 +155,7 @@ export default function ContactUs() {
             {" "}
             Submit{" "}
           </button>
+          <ToastContainer />
         </div>
       </form>
     </div>
